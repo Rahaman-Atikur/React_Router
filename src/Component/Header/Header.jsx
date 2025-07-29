@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
-const Header = () => {
+const Header = ({}) => {
     return (
         <div>
             <nav>
@@ -9,7 +9,8 @@ const Header = () => {
                 <NavLink to="/laptop" >Laptop</NavLink>
                 <NavLink to="/mobile" >Mobile</NavLink>
                 <NavLink to="/Users" >Users</NavLink>
-                <NavLink to="/UsersTwo" >UsersTwo</NavLink>
+                <NavLink to={`users/${id}`} >UsersTwo</NavLink>
+                
             </nav>
         </div>
     );

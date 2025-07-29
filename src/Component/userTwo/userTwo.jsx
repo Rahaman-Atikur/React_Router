@@ -1,7 +1,7 @@
-import React, { use } from 'react';
+import { use } from "react";
 
 const userTwo = ({loadingData}) => {
-    const myPromise = use(loadingData);
+    const loadedData = use(loadingData);
     return (
         <div>
             <h2>I am user Two</h2>
